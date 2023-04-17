@@ -39,10 +39,10 @@ form.onsubmit = function(event){
         }
     }).then((data)=>{
 
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
-      
+      form.querySelector('.loading').classList.add('d-block');
+      form.querySelector('.error-message').classList.remove('d-block');
+      form.querySelector('.sent-message').classList.remove('d-block');
+
       if (data.trim().toUpperCase() == 'OK') {
         form.querySelector('.sent-message').classList.add('d-block');
         form.reset(); 
