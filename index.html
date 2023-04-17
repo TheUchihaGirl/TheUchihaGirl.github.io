@@ -84,8 +84,11 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p> I am a software developer with 5 years of experience in Financial and Healthcare domain. I love exploring new technologies and writting about them in my medium blog. 
-            I love travelling and adventure sports. Want to discuss anything geeky or technical? Hit me up.
+          <p> I am a software developer with 5 years of experience in Financial and Healthcare domain. I love exploring new technologies and writting about them in my medium blog.
+          I am extremely passionate about Web Development and writting code that is Unit Testable. I am a massive advocate of TDD.
+          Apart from technology, I love watching Anime in my free time and reading thriller. My favorite anime is DeathNote and FullMetal Alchemist.
+          I am a foodie, I love baking and experimenting with various cuisines.
+          I love travelling and adventure sports. If you want to discuss about any of the above topic, do send me a message. </p> 
           </div>
 
         <div class="row">
@@ -95,7 +98,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Software Engineer &amp; Web Developer.</h3>
             <p class="fst-italic">
-              Those who can, work. Those who can't supervise !
+              If life throws you lemons, sometimes making lemmonade is not an option, throw those lemons back!
               </p>
             <div class="row">
               <div class="col-lg-6">
@@ -296,20 +299,13 @@
                 <h4>Location:</h4>
                 <p>Kolkata, India</p>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>github.io</p>
-              </div>
-
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.8927614890526!2d88.44548887486461!3d22.583113832585635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027503c6b88afb%3A0x2736639fb4fcdc05!2sHyland%20Software%20Solutions%20India%20LLP!5e0!3m2!1sen!2sin!4v1681631741989!5m2!1sen!2sin" width="440" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="" method="post" role="form" class="php-email-form">
+            <form id = "email-form" action="#" method="post" role="form" class="php-email-form" onsubmit="return saveFormOnSubmit">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -317,7 +313,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="emailId" id="emailId" required>
                 </div>
               </div>
               <div class="form-group">
@@ -375,7 +371,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/form.js"></script>
 </body>
 
 </html>
