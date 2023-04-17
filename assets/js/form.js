@@ -44,6 +44,7 @@ form.onsubmit = function(event){
       form.querySelector('.sent-message').classList.remove('d-block');
 
       if (data.trim().toUpperCase() == 'OK') {
+        form.querySelector('.loading').classList.remove('d-block');
         form.querySelector('.sent-message').classList.add('d-block');
         form.reset(); 
       } else {
